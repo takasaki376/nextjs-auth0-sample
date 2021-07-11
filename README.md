@@ -1,34 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 参考
+https://github.com/auth0/nextjs-auth0/tree/master_OLD/examples/typescript-example
+https://github.com/auth0/nextjs-auth0/tree/main/examples/basic-example
 
-## Getting Started
+# next.js インストール
 
-First, run the development server:
+yarn create next-app . --typescript
 
-```bash
-npm run dev
-# or
-yarn dev
+# tailwind css インストール
+
+yarn add -D tailwindcss@latest postcss@latest autoprefixer@latest
+
+npx tailwindcss init -p
+
+# tailwind.config.js 修正
+
+```
+purge: ["./src/**/*.{js,ts,jsx,tsx}"],
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# globals.css 修正
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.tsx`.
+# 必要 module のインストール
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```
+yarn add classcat
+yarn add -D eslint-plugin-simple-import-sort
+yarn add -D prettier
+yarn add -D eslint-config-prettier
+-- yarn add -D eslint-plugin-jsx-a11y
+yarn add -D @typescript-eslint/eslint-plugin
+yarn add -D @typescript-eslint/parser
+yarn add -D eslint-plugin-tailwindcss
+yarn add -D @jarrodldavis/eslint-plugin-tailwindcss@latest
+yarn add -D prettier-plugin-tailwind
+yarn add @auth0/nextjs-auth0
+yarn add -D isomorphic-unfetch
+```
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+# index.tsx 確認用
+```
+import type { NextPage } from "next";
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+const Home: NextPage = () => {
+  return (
+    <div className="flex flex-col items-center min-h-screen text-red-700 font-mono">
+      Hello Nextjs
+    </div>
+  );
+};
+export default Home;
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
