@@ -1,7 +1,13 @@
 # 参考
+公式ページ
+https://auth0.com/docs/quickstart/webapp/nextjs
+https://auth0.com/docs/quickstart/webapp/nextjs/01-login
+公式ページのサンプル
+https://github.com/auth0-samples/auth0-nextjs-samples/tree/main/Sample-01
+ライブラリのサンプル（ただ、バージョンが古い時のサンプル？）
 https://github.com/auth0/nextjs-auth0/tree/master_OLD/examples/typescript-example
 https://github.com/auth0/nextjs-auth0/tree/main/examples/basic-example
-
+ß
 # next.js インストール
 
 yarn create next-app . --typescript
@@ -58,3 +64,17 @@ const Home: NextPage = () => {
 export default Home;
 
 ```
+
+## Next.js Auth0 のサンプルから
+
+```
+yarn add reactstrap
+yarn add highlight.js
+yarn add dotenv
+yarn add express express-jwt morgan cors jwks-rsa helmet
+yarn add -D @fortawesome/fontawesome-svg-core
+yarn add -D @fortawesome/free-solid-svg-icons
+yarn add -D @fortawesome/react-fontawesome
+```
+
+# next.config.js

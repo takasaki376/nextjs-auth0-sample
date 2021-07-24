@@ -85,7 +85,7 @@ module.exports = {
     "import/no-default-export": "error",
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
-    "sort-imports": ["error", { ignoreDeclarationSort: true }],
+    // "sort-imports": ["error", { ignoreDeclarationSort: true }],
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-var-requires": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
@@ -124,7 +124,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ["src/pages/**/*.tsx", "src/pages/**/**/*.tsx"],
+      files: ["src/pages/**/*.tsx", "src/pages/**/**/*.{tsx,ts}"],
       rules: { "import/no-default-export": "off" },
       parserOptions: {
         project: ["./tsconfig.json"], // Specify it only for TypeScript files
