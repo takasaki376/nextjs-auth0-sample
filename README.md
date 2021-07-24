@@ -39,7 +39,6 @@ yarn add classcat
 yarn add -D eslint-plugin-simple-import-sort
 yarn add -D prettier
 yarn add -D eslint-config-prettier
--- yarn add -D eslint-plugin-jsx-a11y
 yarn add -D @typescript-eslint/eslint-plugin
 yarn add -D @typescript-eslint/parser
 yarn add -D eslint-plugin-tailwindcss
