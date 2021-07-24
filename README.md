@@ -1,13 +1,13 @@
 # 参考
-公式ページ
-https://auth0.com/docs/quickstart/webapp/nextjs
-https://auth0.com/docs/quickstart/webapp/nextjs/01-login
-公式ページのサンプル
-https://github.com/auth0-samples/auth0-nextjs-samples/tree/main/Sample-01
-ライブラリのサンプル（ただ、バージョンが古い時のサンプル？）
-https://github.com/auth0/nextjs-auth0/tree/master_OLD/examples/typescript-example
-https://github.com/auth0/nextjs-auth0/tree/main/examples/basic-example
-ß
+公式ページ  
+https://auth0.com/docs/quickstart/webapp/nextjs  
+https://auth0.com/docs/quickstart/webapp/nextjs/01-login  
+公式ページのサンプル  
+https://github.com/auth0-samples/auth0-nextjs-samples/tree/main/Sample-01  
+ライブラリのサンプル（ただ、バージョンが古い時のサンプル？）  
+https://github.com/auth0/nextjs-auth0/tree/master_OLD/examples/typescript-example  
+https://github.com/auth0/nextjs-auth0/tree/main/examples/basic-example  
+
 # next.js インストール
 
 yarn create next-app . --typescript
