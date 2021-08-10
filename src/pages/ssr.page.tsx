@@ -26,9 +26,9 @@ const SSRPage: NextPage<Props> = (props) => {
           </p>
         </div>
       </div>
-      <div className="result-block-container" data-testid="ssr-json">
-        <div className="result-block">
-          <h6 className="muted">User prop</h6>
+      <div className="opacity-100" data-testid="ssr-json">
+        <div className="opacity-100">
+          <h6>User prop</h6>
           <Highlight>{JSON.stringify(props.user, null, 2)}</Highlight>
         </div>
       </div>

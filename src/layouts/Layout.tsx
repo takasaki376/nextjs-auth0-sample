@@ -1,8 +1,8 @@
 import Head from "next/head";
 import type { ReactNode, VFC } from "react";
 import { Container } from "reactstrap";
-import { Footer } from "src/components/Footer";
-import { NavBar } from "src/components/NavBar";
+import { Footer } from "src/layouts/Footer";
+import { NavBar } from "src/layouts/NavBar";
 
 type LayoutProps = {
   children: ReactNode;

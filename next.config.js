@@ -1,5 +1,6 @@
 module.exports = {
   reactStrictMode: true,
+  pageExtensions: ["page.ts", "page.tsx"],
   images: {
     domains: [
       "lh3.googleusercontent.com",
