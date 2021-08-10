@@ -15,7 +15,7 @@ import {
   NavItem,
   UncontrolledDropdown,
 } from "reactstrap";
-import { RouterLink } from "src/components/RouterLink";
+import { RouterLink } from "src/layouts/RouterLink";
 
 export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);

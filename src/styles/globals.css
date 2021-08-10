@@ -6,11 +6,7 @@
   @apply px-6 py-2 w-full cursor-pointer;
 }
 
-/* .nav-item.dropdown .dropdown-item {
-  @apply p-0;
-} */
-
-.nav-item.dropdown .dropdown-item {
+.dropdown {
   @apply px-6 py-2 w-full;
 }
 
@@ -18,10 +14,6 @@
   @apply mb-[-3px];
 }
 
-.router-link-exact-active {
-  @apply mb-[-3px];
-}
-
-.result-block-container .result-block {
+.result-block {
   @apply opacity-100;
 }

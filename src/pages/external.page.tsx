@@ -79,10 +79,10 @@ const External: NextPage = () => {
           Ping API
         </Button>
       </div>
-      <div className="result-block-container">
+      <div className="opacity-100">
         {isLoading && <Loading />}
         {(error || response) && (
-          <div className="result-block" data-testid="external-result">
+          <div className="opacity-100" data-testid="external-result">
             <h6 className="muted">Result</h6>
             {error && <ErrorMessage>{error?.message}</ErrorMessage>}
             {response && (

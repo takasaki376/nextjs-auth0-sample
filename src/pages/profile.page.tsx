@@ -21,7 +21,7 @@ const Profile = () => {
               <Image
                 src={user.picture as string}
                 alt="Profile"
-                className="img-fluid profile-picture mb-0 ml-0 rounded-full"
+                className="mb-0 ml-0 rounded-full"
                 width="50"
                 height="50"
                 // decode="async"
@@ -30,9 +30,7 @@ const Profile = () => {
             </Col>
             <Col md>
               <h2 data-testid="profile-name">{user.name}</h2>
-              <p className="lead text-muted" data-testid="profile-email">
-                {user.email}
-              </p>
+              <p data-testid="profile-email">{user.email}</p>
             </Col>
           </Row>
           <Row data-testid="profile-json">
